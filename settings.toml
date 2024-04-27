@@ -1,0 +1,3 @@
+SCALE_FACTOR = 1000
+OSRM_BATCH_SIZE = 150
+OSRM_SERVER_ADDRESS = "http://router.project-osrm.org"
