@@ -1,17 +1,17 @@
 {
-  "total_costs": 51014976.0,
+  "total_costs": 50988715.0,
   "facilities": [
     {
       "id": "new_facility_1",
       "name": "New Facility 1",
       "demand": {
         "min": 0.0,
-        "expected": 2028.0,
+        "expected": 2089.0,
         "max": 0.0
       },
       "location": {
-        "lat": -22.924807263615925,
-        "lng": -43.22020076779388
+        "lat": -22.92637654269506,
+        "lng": -43.22854538933616
       },
       "exclusive_region": {
         "type": "MultiPolygon",
@@ -23,7 +23,7 @@
       "name": "Queimados",
       "demand": {
         "min": 0.0,
-        "expected": 599.0,
+        "expected": 598.0,
         "max": 0.0
       },
       "location": {
@@ -93,7 +93,7 @@
       "name": "Taquara",
       "demand": {
         "min": 0.0,
-        "expected": 2053.0,
+        "expected": 1993.0,
         "max": 5000.0
       },
       "location": {
