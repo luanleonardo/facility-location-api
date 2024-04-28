@@ -10,8 +10,8 @@ class CostType(Enum):
     """Available cost types for the cost problem"""
 
     PROXIMITY = "proximity"
-    TRAVEL_DISTANCE = "travel_distance"
-    TRAVEL_DURATION = "travel_duration"
+    TRAVEL_DISTANCE = "distances"
+    TRAVEL_DURATION = "durations"
 
 
 class CostProblem(BaseModel):

@@ -3,11 +3,6 @@ import numpy as np
 from src.models import CostProblem, CostType
 from src.services import osrm_cost_matrix, spherical_cost_matrix
 
-OSRM_COST_TYPE_MAPPING = {
-    CostType.TRAVEL_DISTANCE.value: "distances",
-    CostType.TRAVEL_DURATION.value: "durations",
-}
-
 
 def compute_cost_matrix(cost_problem: CostProblem) -> np.ndarray:
     """Compute cost matrix with a given cost type"""
@@ -33,5 +28,5 @@ def compute_cost_matrix(cost_problem: CostProblem) -> np.ndarray:
         destinations=destinations,
         osrm_server_address=cost_problem.osrm_server_address,
         osrm_batch_size=cost_problem.osrm_batch_size,
-        cost_type=OSRM_COST_TYPE_MAPPING[cost_problem.cost_type.value],
+        cost_type=cost_problem.cost_type.value,
     )
