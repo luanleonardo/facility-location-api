@@ -1,6 +1,6 @@
 # p-Facility Location API
 
-![p-facility-location-api](./data/img/1709416353624.jpeg)
+![p-facility-location-api](./data/img/p-facility-location.png)
 
 The main objective is to efficiently locate a given number `p` of logistics facilities. This is done by minimizing the total proximity (or total travel distance, or total travel time) between the located facilities and clients, respecting possible minimum or maximum demand restrictions and the exclusive service regions.
 
