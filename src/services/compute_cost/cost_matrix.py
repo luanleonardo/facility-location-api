@@ -1,7 +1,7 @@
+import cost_matrix
 import numpy as np
 
 from src.models import CostProblem, CostType
-from src.services import osrm_cost_matrix, spherical_cost_matrix
 
 
 def compute_cost_matrix(cost_problem: CostProblem) -> np.ndarray:
@@ -19,14 +19,14 @@ def compute_cost_matrix(cost_problem: CostProblem) -> np.ndarray:
     demands = np.array([client.demand for client in cost_problem.clients])
 
     if cost_problem.cost_type == CostType.PROXIMITY:
-        return demands * spherical_cost_matrix(
+        return demands * cost_matrix.spherical(
             sources=sources, destinations=destinations
         )
 
-    return demands * osrm_cost_matrix(
+    return demands * cost_matrix.osrm(
         sources=sources,
         destinations=destinations,
-        osrm_server_address=cost_problem.osrm_server_address,
-        osrm_batch_size=cost_problem.osrm_batch_size,
+        server_address=cost_problem.osrm_server_address,
+        batch_size=cost_problem.osrm_batch_size,
         cost_type=cost_problem.cost_type.value,
     )

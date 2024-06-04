@@ -248,6 +248,21 @@ files = [
 ]
 
 [[package]]
+name = "cost-matrix"
+version = "0.1.1"
+description = "Designed to simplify the creation of cost matrices for optimization problems."
+optional = false
+python-versions = "<3.13,>=3.9"
+files = [
+    {file = "cost_matrix-0.1.1-py3-none-any.whl", hash = "sha256:6725fe16b0605aa0116f0f0cfb71e8e7ff384beaa65a06b7636c65a46b54cba8"},
+    {file = "cost_matrix-0.1.1.tar.gz", hash = "sha256:b6290518812b1cf0887109ef79c1e94e6cbc34061a0f9c008261cc7df173b08d"},
+]
+
+[package.dependencies]
+numpy = ">=1.26.4,<2.0.0"
+requests = ">=2.32.3,<3.0.0"
+
+[[package]]
 name = "coverage"
 version = "7.4.4"
 description = "Code coverage measurement for Python"
@@ -1352,13 +1367,13 @@ files = [
 
 [[package]]
 name = "requests"
-version = "2.31.0"
+version = "2.32.3"
 description = "Python HTTP for Humans."
 optional = false
-python-versions = ">=3.7"
+python-versions = ">=3.8"
 files = [
-    {file = "requests-2.31.0-py3-none-any.whl", hash = "sha256:58cd2187c01e70e6e26505bca751777aa9f2ee0b7f4300988b709f44e013003f"},
-    {file = "requests-2.31.0.tar.gz", hash = "sha256:942c5a758f98d790eaed1a29cb6eefc7ffb0d1cf7af05c3d2791656dbd6ad1e1"},
+    {file = "requests-2.32.3-py3-none-any.whl", hash = "sha256:70761cfe03c773ceb22aa2f671b4757976145175cdfca038c02654d061d6dcc6"},
+    {file = "requests-2.32.3.tar.gz", hash = "sha256:55365417734eb18255590a9ff9eb97e9e1da868d4ccd6402399eaf68af20a760"},
 ]
 
 [package.dependencies]
@@ -1912,4 +1927,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.10,<3.13"
-content-hash = "251f92b0e4231448e0e8c26b8bb25acbfbdc5cb4caff48acd6e4f9c866b60b00"
+content-hash = "abbba5e44e4444577aefdadc878631af85b08f420c648d96461af000e9222915"
