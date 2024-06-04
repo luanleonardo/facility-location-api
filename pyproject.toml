@@ -16,6 +16,7 @@ dynaconf = "^3.2.5"
 shapely = "^2.0.3"
 scikit-learn = "^1.4.2"
 requests = "^2.31.0"
+cost-matrix = "^0.1.1"
 
 
 [tool.poetry.group.dev.dependencies]

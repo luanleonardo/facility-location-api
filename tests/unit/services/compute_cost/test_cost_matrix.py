@@ -66,7 +66,7 @@ def mocked_osrm_cost_matrix(cost_problem):
     random_matrix = rng.random((num_sources, num_destinations))
 
     with patch(
-        "src.services.compute_cost.cost_matrix.osrm_cost_matrix"
+        "src.services.compute_cost.cost_matrix.cost_matrix.osrm"
     ) as mocked_osrm_cost_matrix_call:
         mocked_osrm_cost_matrix_call.return_value = random_matrix
         yield mocked_osrm_cost_matrix_call
